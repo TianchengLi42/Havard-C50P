@@ -19,7 +19,7 @@ def main():
 
 def get_bitcoin_price():
     response = requests.get(
-        "https://rest.coincap.io/v3/assets?apiKey=534416f13af2553deda02c91758c4daee3ebe5bbc722f17a38807731a84eb7d3")
+        "https://rest.coincap.io/v3/assets?apiKey=YourAPIKey")
     data_ = response.json()
     for coin in data_["data"]:
         if coin["name"] == "Bitcoin":
